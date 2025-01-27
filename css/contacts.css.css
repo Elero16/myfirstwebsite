@@ -1,0 +1,256 @@
+
+/* Стили для формы обратной связи */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #333;
+  outline: none;
+  transform: scale(1.02);
+}
+
+.contact-form button {
+  background: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.contact-form .home-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  margin-top: 10px; /* Отступ сверху для кнопки */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border: 1px solid #333; /* Граница кнопки */
+  border-radius: 5px; /* Закругление углов */
+  justify-content: center; /* Выравнивание по горизонтали */
+}
+
+.contact-form .home-button:hover {
+  color: #333;
+  border-color: #0056b3;
+  background: rgba(0, 123, 255, 0.1); /* Легкий фон при наведении */
+}
+
+.contact-form .home-button i {
+  margin-right: 10px; /* Отступ между иконкой и текстом */
+  font-size: 20px;
+}
+
+/* Центрирование заголовка */
+.center-align {
+  text-align: center;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Общий контейнер */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0 auto; /* Центрирование контейнера */
+  max-width: 1200px; /* Ограничиваем ширину контейнера */
+}
+
+/* Заголовок */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideInDown 1s ease-in-out;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Footer стили */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: slideInUp 1s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px; 
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f5c518; 
+}
+
+.social-icons a.feedback-link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a.feedback-link:hover {
+  color: #f5c518; /* Цвет при наведении */
+}
+
+/* Стили для блока с другими способами связи */
+.contact-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-options h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-options li {
+  margin: 10px 0;
+}
+
+.contact-options a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.contact-options a:hover {
+  color: #333;
+}
+
+.contact-options a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
